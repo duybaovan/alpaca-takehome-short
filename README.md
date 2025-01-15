@@ -17,6 +17,9 @@ source alpaca_venv/bin/activate  # or `venv\Scripts\activate` on Windows
 # Install dependencies
 pip install -r requirements.txt
 
+# CLI for Fastapi(not sure if recent change, but needed to manually install fastapi-cli as the base lib for fastapi didn't come with it)
+pip install fastapi-cli
+
 # Start the server
 fastapi dev main.py
 ```
